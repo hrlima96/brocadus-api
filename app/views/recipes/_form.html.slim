@@ -1,0 +1,10 @@
+= simple_form_for @recipe do |f|
+  = f.input :name
+  = f.input :time_to_prepare, hint: "min"
+  = f.input :yield, hint: "porcoes"
+  = f.input :method_of_preparation
+  = f.association :ingredients
+  = f.simple_fields_for :ingredients do |i|
+    = i.input :name
+
+  = f.submit

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  time_to_prepare: 1
+  yield: 1
+  method_of_preparation: MyString
+
+two:
+  name: MyString
+  time_to_prepare: 1
+  yield: 1
+  method_of_preparation: MyString

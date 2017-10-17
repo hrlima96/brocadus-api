@@ -1,0 +1,26 @@
+table border="1px"
+  thead
+    tr
+      th id
+      th nome
+      th tempo pra preparar
+      th rendimento
+      th modo de preparo
+      th ingredientes
+  tbody
+    - @recipes.each do |r|
+      tr
+        td = r.id
+        td = r.name
+        td = "#{r.time_to_prepare} min"
+        td = "#{r.yield} porções"
+        td
+          ul
+            - r.method_of_preparation.each do |mp|
+              li = mp
+        td
+          ul
+            - r.ingredients.each do |i|
+              li = i.name
+
+= link_to "Cadastrar", new_recipe_url
